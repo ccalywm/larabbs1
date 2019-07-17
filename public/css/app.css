@@ -16552,6 +16552,10 @@ body {
 
 /* Topic Index Page */
 
+.topics-index-page .topic-list {
+  /* Add container and footer space */
+}
+
 .topics-index-page .topic-list .nav > li > a {
   position: relative;
   display: block;
@@ -16581,6 +16585,10 @@ body {
   margin-bottom: 12px;
   border: 0;
   border-top: 1px solid #dcebf5;
+}
+
+.topics-index-page .topic-list #app > div.container {
+  margin-bottom: 100px;
 }
 
 /* Add container and footer space */
