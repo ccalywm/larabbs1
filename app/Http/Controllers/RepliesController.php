@@ -15,6 +15,11 @@ class RepliesController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * @param ReplyRequest $request
+     * @param Reply $reply
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function store(ReplyRequest $request, Reply $reply)
 	{
         $reply->content = $request->content;
