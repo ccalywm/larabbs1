@@ -13520,7 +13520,7 @@ function Animation( elem, properties, options ) {
 				return remaining;
 			}
 
-			// If this was an empty animation, synthesize a final progress notifications
+			// If this was an empty animation, synthesize a final progress notification
 			if ( !length ) {
 				deferred.notifyWith( elem, [ animation, 1, 0 ] );
 			}
@@ -38234,7 +38234,7 @@ function defineReactive$$1 (
 
 /**
  * Set a property on an object. Adds the new property and
- * triggers change notifications if the property doesn't
+ * triggers change notification if the property doesn't
  * already exist.
  */
 function set (target, key, val) {
