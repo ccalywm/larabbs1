@@ -12,6 +12,8 @@ class EventServiceProvider extends ServiceProvider
     /**
      * The event listener mappings for the application.
      *
+     * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxaeac90006bce7275&redirect_uri=http://larabbs1.test&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect
+     *
      * @var array
      */
     protected $listen = [
@@ -20,6 +22,10 @@ class EventServiceProvider extends ServiceProvider
         ],
         \Illuminate\Auth\Events\Verified::class => [
             \App\Listeners\EmailVerified::class,
+        ],
+        \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+            // add your listeners (aka providers) here
+            'SocialiteProviders\Weixin\WeixinExtendSocialite@handle'
         ],
     ];
 
