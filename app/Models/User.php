@@ -41,7 +41,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
     
     //允许更新的字段
     protected $fillable = [
-        'name', 'email', 'password','avatar','introduction',
+        'name', 'email', 'password','avatar','introduction','phone'
     ];
 
     protected $hidden = [
